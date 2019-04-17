@@ -5,10 +5,7 @@
  */
 package Modele;
 
-/**
- *
- * @author hatifiw
- */
-public abstract class Order {
+
+public class MarketOrder extends Order {
     
 }

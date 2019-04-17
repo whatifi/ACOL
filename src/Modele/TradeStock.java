@@ -5,11 +5,21 @@
  */
 package Modele;
 
+import java.util.Calendar;
+
 /**
  *
  * @author hatifiw
  */
-public class TradeStock {
+public class TradeStock extends Trade {
     private Stock stock;
     private Order order;
+
+    public TradeStock(Calendar time, int qty, Side side) {
+        super(time, qty, side);
+    }
+    
+    
 }
+
+

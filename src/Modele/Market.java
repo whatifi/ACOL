@@ -6,6 +6,7 @@
 package Modele;
 
 import java.sql.Time;
+import java.util.Calendar;
 import java.util.logging.Logger;
 
 /**
@@ -13,24 +14,27 @@ import java.util.logging.Logger;
  * @author acol authors
  */
 abstract public class Market {
-    public Time openingHour;
-    public Time closingHour;
+     public Calendar openingHour ;
+     public Calendar closingHour;
 
-    public Time getOpeningHour() {
-        return openingHour;
+    public void setOpeningHour() {
+        // Creating a calendar 
+        Calendar cal = Calendar.getInstance(); 
+        cal.set(Calendar.HOUR, 9);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        this.openingHour = cal;
     }
 
-    public Time getClosingHour() {
-        return closingHour;
-    }
-
-    public void setOpeningHour(Time openingHour) {
-        this.openingHour = openingHour;
-    }
-
-    public void setClosingHour(Time closingHour) {
+    public void setClosingHour(Calendar closingHour) {
+        Calendar cal = Calendar.getInstance(); 
+        cal.set(Calendar.HOUR, 21);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
         this.closingHour = closingHour;
     }
+
+  
     
     
     

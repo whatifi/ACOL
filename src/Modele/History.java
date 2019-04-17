@@ -5,10 +5,22 @@
  */
 package Modele;
 
+import java.util.List;
+
 /**
  *
  * @author hatifiw
  */
 public class History {
+     private List<Trade> oldTrades;
+     
+    public void addTrade(Trade t){
+        oldTrades.add(t);
+    }
     
+    public List<Trade> getOldTrades() {
+        return oldTrades;
+    }
+     
+     
 }

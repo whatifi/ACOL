@@ -7,6 +7,7 @@ package Modele;
 
 import static java.lang.String.format;
 import java.sql.Time;
+import java.util.Calendar;
 
 /**
  *
@@ -18,11 +19,11 @@ enum Side {
 }
 
 class Trade {
-    int time;
+    Calendar time;
     int qty;
     Side side;
 
-    Trade(int time, int qty, Side side) {
+    Trade(Calendar time, int qty, Side side) {
         this.time = time;
         this.qty = qty;
         this.side = side;
