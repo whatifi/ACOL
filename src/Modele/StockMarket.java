@@ -18,7 +18,7 @@ public class StockMarket extends Market {
     private List<Stock> stocks;
 
     public StockMarket() {
-        ArrayList<Stock> equities = new ArrayList<Stock>();
+        ArrayList<Stock> equities = new ArrayList<>();
      }
 
     public List<Stock> getStocks() {
